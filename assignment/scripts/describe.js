@@ -152,9 +152,22 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - colorOne and colorTwo are set to the incorrect values.
+// Set variables to the following:
+// let colorOne = 'blue';
+// let colorTwo = 'red';
+
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
+
+// FIX - only colorOne is being set to purple, but we want colorTwo to be set to purple also.
+// Replace with the following code:
+//  if (mix === true) {
+//    colorOne = 'purple';
+//    colorTwo = 'purple';
+//  }
+// Additionally, while not technically wrong to use "===" to evaluate conditional, consider the possibility that we may want to use "==" instead. Being new to this, I don't know if this is a good or bad idea, but I just wanted to demonstrate that I'm thinking about it.
 
 if (mix === true) {
   colorOne = 'purple';
@@ -166,8 +179,20 @@ if (mix === true) {
 // -- they are so we console.log 'throw away the food!'
 
 /*
+
+// FIX - consider using let instead of const for time, as the conditional below implicitly assumes this value can change. Could cause problems.
+// Replace code with the following:
+// let temp = 40;
+// let time = 4;
+
 let temp = 40;
 const time = 4;
+
+// Conditional does not match spec. Change OR to AND.
+// Replace code with the following:
+//  if (temp > 39 && time >= 4) {
+//    console.log('throw away the food!');
+//  }
 
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
@@ -182,9 +207,21 @@ if (temp > 39 || time >= 4) {
 let age = 21;
 const minAge = 21;
 
+// FIX - Conditional does not match spec. Currently, this checks if the minAge is less than or equal to the age. This is backwards according to the spec.
+// Also, desired logic suggests that the minimum age should register as allowed, therefore no "or equal to" is required at this time.
+// Replace code with the following:
+//  if(age < minAge) {
+//    console.log('no entry');
+//  } else {
+//    console.log('enter');
+//  }
+
 if(minAge <= age) {
   console.log('no entry');
 } else {
   console.log('enter');
 }
 */
+
+// DEV // NOTE:
+// The above code should be considered a high priority to be updated, as failure to do so could land us in legal trouble, especially when when it comes to minors. We don't want HR to get mad at us again.
