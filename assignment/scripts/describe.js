@@ -49,6 +49,9 @@ if (name === 'Mary') {
 // Define new variable with identifier "code" with integer value = 123.
 // If variable "code" is equal in value and type to the integer value 123
 // Then set the variable "secret" to the string value "super", and  set the variable "code" to the integer value equal to the existing value of "code" * 2.
+// If variable "code" is greater than the integer value of 250
+// Then set the variable "secret" to the string value of "duper"
+// Output the current value of the variable "secret" to the console.
 
 //CODE
 /*
@@ -70,10 +73,29 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-//
-//
-//
-//
+
+// STUDENT // NOTE:
+// I threw some spaces in-between these lines for readability. It became quite verbose otherwise.
+
+// Define new variable with the identifier "isStudent" to the boolean value of "True".
+// Define new variable with the identifier "age" to the integer value of 34.
+// Define new variable with the identifier "zip" to the integer value of 55407.
+
+// If the variable "isStudent" is equal in value and type to the boolean value of "True" and the variable with the identifier "zip" is greater than the integer value of 80000
+// Then output the string value "You're a student on the West Coast!" to the console.
+// If the previous conditional returns true, then skip to the end of the code block. Otherwise, proceed to the next conditional.
+
+// If the variable with the identifier "isStudent" is equal in value and type to the boolean value "False" or the variable with the identifier "age" is less than the integer value of 30
+// Then output the string value "What are your hobbies?" to the console.
+// If the previous conditional returns true, then skip to the end of the code block. Otherwise, proceed to the next conditional.
+
+// If the variable "isStudent" is equal in value and type to the boolean value of "True"
+// Then output the string value "Welcome to Prime!" to the console.
+// If the previous conditional returns true, then skip to the end of the code block. Otherwise, proceed to the next conditional.
+
+// If no other conditional returned a boolean value of "True"
+// Then output the string value "How about the weather?" to the console.
+// Hang your head in shame for not considering this situation as a programmer.
 
 //CODE
 /*
